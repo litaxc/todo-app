@@ -1,0 +1,10 @@
+<div ng-repeat="todo in todos">
+    <div ng-hide="todo.done">
+        <button class="btn btn-default" type="button" ng-click="setDone(todo)">
+            <span class="glyphicon glyphicon-ok"></span>
+        </button>
+        <span>
+	  {{todo.name}} {{todo.importance}} {{todo.done}} {{1414673932900 | date}}
+	</span>
+    </div>
+</div>
